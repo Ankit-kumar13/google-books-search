@@ -2,7 +2,7 @@ import Book from "./Book"
 
 const BookResults = ({books}) => {
     return (
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="results-wrapper">
         {
             !books.length ? (<h1>No books Found</h1>) : (books.map(book => (
             
@@ -15,6 +15,9 @@ const BookResults = ({books}) => {
                 thumbnail={book?.volumeInfo?.imageLinks?.smallThumbnail && book.volumeInfo.imageLinks.smallThumbnail}
                 previewLink={book.volumeInfo.previewLink}
                 publisher={book.volumeInfo.publisher}
+                publishedDate={book.volumeInfo.publishedDate}
+                listPrice={book?.saleInfo?.listPrice?.amount && book.saleInfo.listPrice.amount}
+                offerPrice = {book?.saleInfo?.retailPrice?.amount && book.saleInfo.retailPrice.amount}
             />
             )))
         }

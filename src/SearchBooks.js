@@ -21,7 +21,7 @@ const SearchBooks = () => {
     }
 
     return (
-        <div className="my-0 mx-auto w-11/12">
+        <div className="my-0 mx-auto w-11/12 ">
             <form onSubmit={handleSearch} className="p-10 mb-10 rounded-lg bg-gray-200 shadow-lg flex flex-col justify-center items-center">
                 <label htmlFor="books" className="w-60 mb-5 block">
                     Search Book

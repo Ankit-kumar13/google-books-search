@@ -1,3 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.book-card-wrapper {
+    min-width: 296px;
+  
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 120px 15px 20px;
+    padding: 90px 20px 15px;
+    position: relative;
+    width: 295px;
+  }
+
+  .book-card-wrapper:hover {
+    top: -3px;
+  }
+  .results-wrapper {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 30px 10px;
+    width: 100%;
+
+    background-color: #dfe3eb;
+  }
+
+  .product-image {
+    border-radius: 8px;
+    height: 153px;
+    left: 20px;
+    position: absolute;
+    top: -90px;
+    width: 125px;
+  }
+
+.product-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 210px;
+    text-align: left;
+}
+
+.product-card-content {
+    min-height: 150px;
+}
+
+.product-title {
+    color: #4ac5e3;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.product-desc {
+    color: #6d737d;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.product-author {
+    color: #a8adb5;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.product-footer{
+    color: #454a55;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.cart-price {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: auto;
+}
+
+.price {
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.offer-price{
+    color: #454a55;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.add-to-cart-parent {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.cart-parent {
+    align-items: center;
+    display: flex;
+}
+
+.cart-btn {
+    background: #202020;
+    color: white;
+    padding: 6px 10px; 
+    border-radius: 5px;
+    border: 1px solid #202020;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .5px;
+    line-height: 14px;
+    min-width: 110px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+
+}
